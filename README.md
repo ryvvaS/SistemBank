@@ -50,10 +50,15 @@ Funcionamento:
 ### Funcionário
 
 A classe `Funcionario` representa um funcionário de uma loja com uma conta de salário e uma conta de investimento. Ele pode receber seu salário e fazer um investimento com uma parte do salário.
+
 Funcionamento:
+
 1 Inicialização: Quando uma instância de Loja é criada, ela recebe um nome, um saldo inicial e duas instâncias de Funcionario como parâmetros. A loja também inicializa sua própria conta bancária e um objeto Banco para operações bancárias.
+
 2 Método exibirSaldoFinal(): Este método exibe o saldo final da conta bancária da loja.
+
 3 Método pagarFuncionario(): Este método é responsável por pagar os funcionários da loja. Primeiro, ele verifica se o saldo da loja é suficiente para pagar os salários dos funcionários (que é definido como uma constante salarioFuncionario). Se houver saldo suficiente, o método utiliza o método estático transferir da classe Banco para transferir o salário de cada funcionário da conta da loja para suas contas de salário individuais. Em seguida, chama o método MakeInvestimentoSalario() de cada funcionário para investir uma parte de seu salário em sua conta de investimento.
+
 4 Método toString(): Este método retorna uma representação em string da loja.
 
 Portanto, a classe Loja permite a gestão do saldo da loja, exibição do saldo final e pagamento de salários aos seus funcionários.
