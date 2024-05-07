@@ -1,4 +1,5 @@
-public class SystemBank {
+package atividadeIndividual01;
+public class main {
     public static void main(String[] args) {
         Funcionario funcionario1 = new Funcionario("funcionario1", 0, 0);
         Funcionario funcionario2 = new Funcionario("funcionario2", 0, 0);
