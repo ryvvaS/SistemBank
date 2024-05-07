@@ -1,6 +1,7 @@
 # Sistema Bancário Simulado
 
 Este é um sistema bancário simulado em Java, que inclui classes para contas bancárias, funcionários de lojas, clientes e um sistema de transferência de fundos entre contas.
+As alterações feitas recentemente foram para adequar o modelo de organização solicitado pelo professor, separando devidamente as classes em arquivos unicos, inicializados pela `main.java`
 
 ## Requisitos de funcionamento da aplicação:
 Como indicado na ativiade, foi utilizado o JAVA 17, para construção do programa;
@@ -12,7 +13,8 @@ A IDE utilizada foi a Eclipse IDE for Java Developers - 2024-03
 A classe `Conta` representa uma conta bancária com métodos para depositar, sacar e exibir o saldo. Ele também usa um mecanismo de bloqueio para garantir a segurança das operações concorrentes.
 O mecanismo utilizado na classe Conta para garantir a segurança das operações concorrentes é o uso de um bloqueio (lock) fornecido pela interface Lock do pacote java.util.concurrent.locks e implementado pela classe ReentrantLock.
 
-![image](https://github.com/ryvvaS/SistemBank/assets/63801754/91d5d2bc-0134-4d0b-ad81-6a9ee3445613)
+![image](https://github.com/ryvvaS/SystemBank/assets/63801754/7deab87c-d5dd-4f3d-9bcf-c67823b32b0e)
+
 
 
 ### Banco
@@ -27,7 +29,9 @@ Este método recebe três parâmetros:
 
 3 valor: O valor a ser transferido entre as contas.
 
-![image](https://github.com/ryvvaS/SistemBank/assets/63801754/b81261fd-6fbb-42b1-a734-5b5429bad160)
+
+![image](https://github.com/ryvvaS/SystemBank/assets/63801754/e0e897f4-4dc8-4250-8056-c8bc29054101)
+
 
 
 ### Loja
@@ -44,7 +48,8 @@ Funcionamento:
 4 Associação com Funcionários: Mantém referências para dois funcionários associados, permitindo que o pagamento dos salários seja realizado.
 
 
-![image](https://github.com/ryvvaS/SistemBank/assets/63801754/02e89510-3513-42f0-a774-705c2f25d10d)
+![image](https://github.com/ryvvaS/SystemBank/assets/63801754/9656f68c-7f2c-4aed-a419-7fbc7166d6fe)
+
 
 
 ### Funcionário
@@ -63,7 +68,9 @@ Funcionamento:
 
 Portanto, a classe Loja permite a gestão do saldo da loja, exibição do saldo final e pagamento de salários aos seus funcionários.
 
-![image](https://github.com/ryvvaS/SistemBank/assets/63801754/e7fee303-58c2-48a9-ad70-77eca1f6ad24)
+
+![image](https://github.com/ryvvaS/SystemBank/assets/63801754/0b3a63ef-a65c-4fee-ae41-e95529afdee6)
+
 
 
 ### Cliente
@@ -82,7 +89,9 @@ Funcionamento:
 
 5 Atualização e Espera: Após cada compra, o cliente atualiza o índice de compra e aguarda um curto período de tempo antes de verificar novamente o saldo.
 
-![image](https://github.com/ryvvaS/SistemBank/assets/63801754/a11304c3-7dfd-40c3-a014-ce6b9122d6b2)
+
+![image](https://github.com/ryvvaS/SystemBank/assets/63801754/845a782f-1c11-4dfb-9222-5431213208cd)
+
 
 
 ### Main
@@ -99,7 +108,8 @@ Funcionamento:
 
 4 Finalização e Exibição: Após a conclusão das operações de todas as threads, os saldos finais de todas as contas e clientes são exibidos, fornecendo uma visão geral do estado final do sistema bancário simulado.
 
-![image](https://github.com/ryvvaS/SistemBank/assets/63801754/52fbe520-dc09-4ab1-918e-cdfe66d40e66)
+![image](https://github.com/ryvvaS/SystemBank/assets/63801754/5f6a913a-6c1c-47e5-9c20-735524e35775)
+
 
 
 ## Executando o Sistema
