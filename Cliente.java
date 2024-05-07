@@ -1,3 +1,5 @@
+package atividadeIndividual01;
+
 class Cliente implements Runnable {
     private Conta conta;
     private Loja loja1;
