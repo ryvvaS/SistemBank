@@ -1,3 +1,5 @@
+package atividadeIndividual01;
+
 class Funcionario implements Runnable {
     Conta contaSalario;
     private Conta contaInvestimento;
