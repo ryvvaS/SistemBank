@@ -85,13 +85,13 @@ Funcionamento:
 ![image](https://github.com/ryvvaS/SistemBank/assets/63801754/a11304c3-7dfd-40c3-a014-ce6b9122d6b2)
 
 
-### Sistema Bancário
+### Main
 
-A classe `SystemBank` é a classe principal que inicializa todas as lojas, funcionários e clientes, cria threads para funcionários e clientes e gerencia suas execuções. Ele também exibe os saldos finais de todas as contas e clientes após a conclusão da simulação.
+A classe `main` é a classe principal que inicializa todas as lojas, funcionários e clientes, cria threads para funcionários e clientes e gerencia suas execuções. Ele também exibe os saldos finais de todas as contas e clientes após a conclusão da simulação.
 
 Funcionamento:
 
-1 Inicialização: A classe SystemBank cria instâncias de funcionários, lojas e clientes com saldos iniciais e associações apropriadas.
+1 Inicialização: A classe main cria instâncias de funcionários, lojas e clientes com saldos iniciais e associações apropriadas.
 
 2 Criação de Threads: Threads são criadas para cada cliente e funcionário, permitindo que eles executem suas atividades de forma concorrente.
 
@@ -104,4 +104,4 @@ Funcionamento:
 
 ## Executando o Sistema
 
-Para executar o sistema, basta executar a classe `SystemBank`. Ele criará e executará as threads para clientes e funcionários, realizará transações entre contas e exibirá os saldos finais.
+Para executar o sistema, basta executar a classe `main`. Ele criará e executará as threads para clientes e funcionários, realizará transações entre contas e exibirá os saldos finais.
