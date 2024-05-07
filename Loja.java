@@ -1,6 +1,8 @@
+package atividadeIndividual01;
+
 class Loja {
     Conta conta;
-    private Banco banco;
+  
     private Funcionario funcionario1;
     private Funcionario funcionario2;
     private String name;
@@ -10,7 +12,7 @@ class Loja {
     public Loja(String name, double saldoInicial, Funcionario funcionario1, Funcionario funcionario2) {
         this.name = name;
         conta = new Conta(saldoInicial, name);
-        banco = new Banco();
+
         this.funcionario1 = funcionario1;
         this.funcionario2 = funcionario2;
     }
